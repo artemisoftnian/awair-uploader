@@ -16,6 +16,33 @@ If you want to create a standalone version of Awair-uploader, run the following 
 npm run make
 ```
 
+Build on a Raspberry Pi:
+Make sure you have RPM installed:  
+```sh
+sudo apt install rpm
+```
+Using Script Entry:
+```sh
+npm run makepi
+```
+OR
+```sh
+   electron-forge make --arch armv7l
+```
+
+If encounter errors related to @electron-forge/maker-squirrel, remove the following entry from the package.json file: 
+```sh
+    {
+        "name": "@electron-forge/maker-squirrel",
+        "config": {
+        "name": "awair-uploader"
+        }
+    },
+```
+[https://github.com/electron-userland/electron-forge/issues/2656] (https://github.com/electron-userland/electron-forge/issues/2656)
+
+
+
 ## Contributing
 
 The project was developed on MacOS and the building section is only for MacOS. Feel free to contribute to the project by adding your distro building section (Windows/Linux) with a Pull Request. 
