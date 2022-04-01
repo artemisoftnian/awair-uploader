@@ -16,7 +16,6 @@
     "lint": "eslint --ext .ts,.tsx ."
   },
   "keywords": [],
-  "author": "Sheherezadhe",
   "license": "GNU GPL V3",
   "config": {
     "forge": {
