@@ -39,7 +39,7 @@ If encounter errors related to @electron-forge/maker-squirrel, remove the follow
         }
     },
 ```
-[Problem Reference] (https://github.com/electron-userland/electron-forge/issues/2656)
+[Problem Reference]: https://github.com/electron-userland/electron-forge/issues/2656
 
 
 
