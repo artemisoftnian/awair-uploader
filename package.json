@@ -1,7 +1,7 @@
 {
   "name": "awair-uploader",
   "productName": "awair-uploader",
-  "version": "0.0.1",
+  "version": "2.0.0",
   "description": "An Awair Element data uploader",
   "main": ".webpack/main",
   "author": {
@@ -21,18 +21,20 @@
     "forge": {
       "packagerConfig": {},
       "makers": [
+        {"commented-for-raspi":
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
             "name": "awair-uploader"
           }
-        },
+        }},
         {
           "name": "@electron-forge/maker-zip",
           "platforms": [
             "darwin",
             "linux",
-            "windows"
+            "windows",
+            "armv7l"
           ]
         },
         {
