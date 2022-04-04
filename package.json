@@ -1,7 +1,7 @@
 {
   "name": "awair-uploader",
   "productName": "awair-uploader",
-  "version": "2.0.0",
+  "version": "1.0.2",
   "description": "An Awair Element data uploader",
   "main": ".webpack/main",
   "author": {
@@ -33,8 +33,7 @@
           "platforms": [
             "darwin",
             "linux",
-            "windows",
-            "armv7l"
+            "windows"
           ]
         },
         {
