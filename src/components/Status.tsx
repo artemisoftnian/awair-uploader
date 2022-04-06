@@ -18,7 +18,7 @@ const Status = () => {
     return (
       <div>
         {
-          result.map((element, index) => (
+          result.reverse().map((element, index) => (
             <div key={index}>
               {element.calledAt !== '' && element.receivedAt !== '' &&
                 <div>

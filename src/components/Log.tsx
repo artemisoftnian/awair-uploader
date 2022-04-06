@@ -24,7 +24,7 @@ const Log = () => {
           data &&
           <div className='scroll'>
             {
-              data.map((log, index) => (
+              data.reverse().map((log, index) => (
                 <div key={index} style={{ backgroundColor: index % 2 ? 'white' : 'rgba(211, 211, 211, 0.571)', paddingLeft: 10 }}>
                   {log}
                 </div>

@@ -11,13 +11,16 @@ import { AxiosRequestInterceptorProvider } from './utils/axios';
 axios.interceptors.request.use(AxiosRequestInterceptorProvider);
 
 function render() {
+  var electronapp = document.getElementById('electron-app');
+
   ReactDOM.render(
     <Provider store={store}>
       <AuthorizationProvider authorizationProps={constants.identityProvider}>
         <App />
       </AuthorizationProvider>
     </Provider>
-    , document.body);
+    //, document.body);
+    , electronapp);
 }
 
 render();
